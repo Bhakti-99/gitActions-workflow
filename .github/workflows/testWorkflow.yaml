@@ -17,4 +17,12 @@ jobs:
         env:
           CI: true
       - run: npm run build
-
+  sleep-time:
+    name: sleep-time
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          time: '5m'
+      - run: sleep 5m
