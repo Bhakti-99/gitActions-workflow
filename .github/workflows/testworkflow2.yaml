@@ -1,8 +1,9 @@
-name: Test the workflow 
+name: Test the workflow 2
 on:
-  push:
-    branches:
-      - main
+  workflow_run:
+    workflows: ['Test the workflow']
+    types:
+      [completed]
 jobs:
   test:
     name: test
@@ -17,9 +18,3 @@ jobs:
         env:
           CI: true
       - run: npm run build
-  sleep-time:
-    name: sleep-time
-    # needs: test
-    runs-on: ubuntu-latest
-    steps:
-      - run: sleep 2m
