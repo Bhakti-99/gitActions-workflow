@@ -19,7 +19,7 @@ jobs:
       - run: npm run build
   sleep-time:
     name: sleep-time
-    # needs: test  
+    needs: test  
     runs-on: ubuntu-latest
     steps:
       # - run: Start-Sleep -s 30
