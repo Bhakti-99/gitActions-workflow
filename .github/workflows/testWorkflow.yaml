@@ -20,6 +20,7 @@ jobs:
   sleep-time:
     name: sleep-time
     # needs: test 
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     steps:
-      - run: Start-Sleep -s 30
+      # - run: Start-Sleep -s 30
+      - run: sleep 1m
