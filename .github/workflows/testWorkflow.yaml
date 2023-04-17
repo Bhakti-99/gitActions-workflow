@@ -17,7 +17,6 @@ jobs:
         env:
           CI: true
       - run: npm run build
-        echo: 'job completed'
   # sleep-time:
   #   name: sleep-time
   #   # needs: test
