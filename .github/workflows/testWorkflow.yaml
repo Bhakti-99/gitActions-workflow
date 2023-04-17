@@ -22,4 +22,4 @@ jobs:
     # needs: test 
     runs-on: windows-latest
     steps:
-      - run: sleep 2m
+      - run: Start-Sleep -s 30
