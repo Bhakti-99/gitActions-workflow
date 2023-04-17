@@ -1,6 +1,6 @@
 name: Test the workflow 
 on:
-  workflow_dispatch:
+  workflow_dispatch:  
     branches:
       - main
 jobs:
@@ -17,9 +17,10 @@ jobs:
         env:
           CI: true
       - run: npm run build
-  sleep-time:
-    name: sleep-time
-    # needs: test
-    runs-on: ubuntu-latest
-    steps:
-      - run: sleep 2m
+        echo: 'job completed'
+  # sleep-time:
+  #   name: sleep-time
+  #   # needs: test
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - run: sleep 2m
