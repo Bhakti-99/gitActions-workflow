@@ -1,6 +1,6 @@
 name: Test the workflow 
 on:
-  workflow_dispatch:
+  push:
     branches:
       - main
 jobs:
